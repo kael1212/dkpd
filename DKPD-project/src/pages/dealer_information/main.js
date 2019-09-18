@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './dealer_information.vue'
+import App from './index.vue'
 
 Vue.config.productionTip = false
 App.mpType = 'app'

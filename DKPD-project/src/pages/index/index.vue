@@ -1,7 +1,9 @@
 <template>
   <div class="app">
     <!-- 背景-->
-    <div class="note">
+    <div class="backgroub">
+      <!-- logo -->
+      <img class="image" src="./icon/dkpd_logo.png">
       <!-- 中间输入框-->
       <div class="middle-box">
         <div class="loading loading-way-box">
@@ -30,8 +32,8 @@
           <p class="service">联系客服</p>
         </div>
 
-        <div class="wx" onclick>
-          <img src="img/wx.png" alt />
+        <div class="wx">
+          <img src="icon/weixin.png" alt />
         </div>
       </div>
     </div>
@@ -56,13 +58,19 @@ export default {
 
 <style>
 /*暂时不做  最大背景*/
-.note {
+.backgroub{
   width: 5rem;
   height: 5rem;
+  background:red; 
   background-image: url("./icon/1.jpg");
   background-repeat: no-repeat;
   -webkit-background-origin: border-box;
   background-origin: border-box;
+}
+.logo{
+  float: left;
+  background-image: url("icon/dkpd_logo.png");
+
 }
 
 .middle-box {

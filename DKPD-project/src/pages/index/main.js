@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './index'
+import App from './icon/index'
 
 
 const app = new Vue(App)

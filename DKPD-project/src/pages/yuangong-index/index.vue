@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <!-- 背景-->
-    <div class="note" :style="note">
+    <div class="note">
       <!-- 中间输入框-->
       <div class="middle-box">
         <div class="loading loading-way-box">
@@ -28,6 +28,7 @@
             <Radio label="业务员">业务员</Radio>
           </RadioGroup>
           <p class="service">联系客服</p>
+          <div class="clear"></div>
         </div>
 
         <div class="wx" onclick>
@@ -41,7 +42,7 @@
 <script>
 import "../CSS/initialize.css";
 export default {
-  name: "productdetailspage",
+  
   data() {
     return {
       animal: "经销商"
@@ -59,7 +60,7 @@ export default {
 .note {
   width: 5rem;
   height: 5rem;
-  background-image: url("./icon/jxs-all-background.jpg");
+  background-image: url("./icon/1.jpg");
   background-repeat: no-repeat;
   -webkit-background-origin: border-box;
   background-origin: border-box;
@@ -150,7 +151,9 @@ export default {
   width: 4rem;
   height: 0.25rem;
   font-size: 0.25rem;
+  
 }
+.clear{ clear:both}
 
 label {
   position: relative;
