@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/recycle/main",
-    "pages/staff_login/main",
-    "pages/dealer_login/main",
+    "pages/advertising_management/main",
+    "pages/recyclebin/main",
     "pages/dealer_list/main",
+    "pages/dealer_login/main", 
+    "pages/staff_login/main",     
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main"
