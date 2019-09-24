@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/staff_login/main",
+    "pages/dealer_login/main",
+    "pages/dealer_list/main",
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main"
