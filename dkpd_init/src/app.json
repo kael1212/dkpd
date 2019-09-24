@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/recycle/main",
     "pages/staff_login/main",
     "pages/dealer_login/main",
     "pages/dealer_list/main",
