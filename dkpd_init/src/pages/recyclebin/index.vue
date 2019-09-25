@@ -5,7 +5,7 @@
       <img class="recycle_top position-1" src="/static/images/picture/recycle_top.png" />
       <div class="first position-1 " position>
         <img class="icon-1 first-img" src="/static/images/icon/advertising_management/retreat.png" />
-        <span class="title-font-size font-color-1 first-son">{{title}}</span>
+        <span class="title-font-size font-color-1 margin-left-1">{{title}}</span>
       </div>
     </div>
 
