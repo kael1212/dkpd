@@ -1,8 +1,12 @@
 {
   "pages": [
-    "pages/recharge/main", 
+    "pages/merchant_list/main", 
+    "pages/salesclerkrecycle/main", 
+    "pages/advertisingrecycle/main", 
     "pages/advertising_management/main", 
-    "pages/recyclebin/main", 
+    "pages/voucher_list/main", 
+    "pages/rewards/main", 
+    "pages/recharge/main", 
     "pages/salesclerk_list/main", 
     "pages/dealer_list/main",  
     "pages/staff_login/main", 

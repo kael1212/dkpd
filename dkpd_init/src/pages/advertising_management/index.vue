@@ -2,55 +2,47 @@
   <div>
     <!-- 标题栏 -->
     <div class="headline">
-      <img class="recycle_top position-1" src="/static/images/picture/recycle_top.png" />
-      <div class="first position-1" position>
-        <img class="icon-1 first-img" src="/static/images/icon/advertising_management/retreat.png" />
-        <span class="title-font-size font-color-1 margin-left-1">{{title}}</span>
+      <img class="width-all height-13 position-1" src="/static/images/picture/recycle_top.png" />
+      <div>
+        <img
+          class="float-left position-2 icon-1 float-left-position"
+          src="/static/images/icon/advertising_management/retreat.png"
+        />
+        <span class="title position-1 top title-font-size font-color-1">{{title}}</span>
+        <img
+          class="float-right position-2 icon-2 float-right-position"
+          src="/static/images/icon/advertising_management/delete.png"
+        />
       </div>
-      <img
-        class="delete icon-2 position-1"
-        src="/static/images/icon/advertising_management/delete.png"
-        alt
-      />
     </div>
 
-    <div class="allbody">
-      <!-- 搜索框 -->
-      <div class="second position-2">
-        <input class="input display-1 font-size-2" type="text" placeholder="请输入商家名称查询" />
+    <!-- <div class="headline">
+      <div class="background-photo" >
+        
+      </div>
+
+      <div class="float-left">
         <img
-          class="search-icon display-1 icon-2"
-          src="/static/images/icon/advertising_management/search.png"
+          class="icon-1 margin-right-45"
+          src="/static/images/icon/advertising_management/retreat.png"
+        />
+        <div class="display-1 center background-color-1">
+          <span class="title-font-size font-color-2 margin-left-1">{{title}}</span>
+        </div>
+        <img
+          class="icon-2 margin-left-45"
+          src="/static/images/icon/advertising_management/delete.png"
           alt
         />
       </div>
+    </div>-->
+
+    <div class="allbody">
+      <!-- 搜索框组件 -->
+      <search></search>
 
       <!-- 筛选 -->
-      <div class="filtrate margin-top-4">
-        <div class="display-1 border-0 back-color ">
-          <span class="dafdfad">筛选:</span>
-        </div>
-        <input
-          class="display-1 border-0 filtrate-box-size font-size-2 font-color-5"
-          type="button"
-          value="全部"
-        />
-        <input
-          class="display-1 border-0 filtrate-box-size font-size-2 font-color-5"
-          type="button"
-          value="未审核"
-        />
-        <input
-          class="display-1 border-0 filtrate-box-size font-size-2 font-color-5"
-          type="button"
-          value="已投放"
-        />
-        <input
-          class="display-1  filtrate-box-size font-size-2 font-color-5"
-          type="button"
-          value="未通过"
-        />
-      </div>
+      <filtrate></filtrate>
 
       <!-- 数据列表 -->
       <div class="thirdly position-2 margin-top-3">
@@ -79,33 +71,46 @@
           <span class="font-color-4">{{activityName}}</span>
         </div>
 
-        <div>
-          <div class="state display-1 font-size-2 margin-left-1">
-            <span class="font-color-2 ">状态&nbsp;:&nbsp;</span> 
+        <div class="width-all height-6 margin-top-3">
+          <div class="width-30 display-1 font-size-2">
+            <span class="font-color-2">状态&nbsp;:&nbsp;</span>
             <span class="font-color-6">{{state}}</span>
           </div>
-          <div class="expirationTime display-1 font-color-5 font-size-2 margin-left-1">
+          <div class="width-40 display-1 font-color-5 font-size-2 padding-right-3">
             过期时间&nbsp;:&nbsp;
             <div class="display-1">{{expirationTime}}</div>
           </div>
-          <input class="button-1 display-1 font-color-1 font-size-1 margin-left-1" type="button" value="审核状态" />
-          <input class="button-1 display-1 font-color-1 font-size-1 margin-left-1" type="button" value="放入回收站" />
+          <div class="width-30 display-1 ">
+            <input class="button-1 display-1 font-color-1 font-size-1 " type="button" value="审核状态" />
+            <input
+              class="button-1 display-1 font-color-1 font-size-1 margin-left-1"
+              type="button"
+              value="放入回收站"
+            />
+          </div>
         </div>
       </div>
     </div>
+    <div class="clear:bosh"></div>
   </div>
 </template>
 
 <script>
+import search from "@/components/search.vue";
+import filtrate from "@/components/filtrate.vue";
+
 export default {
   data: {
     title: "广告管理",
     name: "大咖评点",
     byName: "律动琴行",
     activityName: "优惠券",
-    state:"未审核",
-    expirationTime: "2019年9月24日"
-    
+    state: "未审核",
+    expirationTime: "2019/9/24"
+  },
+  components: {
+    search,
+    filtrate
   }
 };
 </script>
