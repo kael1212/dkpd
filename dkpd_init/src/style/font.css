@@ -23,6 +23,9 @@
     
 }
 
+.font-size-015{
+    font-size: 0.15rem
+}
 
 .font-size-1{
     font-size: 0.19rem
@@ -41,7 +44,9 @@
 .font-size-4{
     font-size: 0.4rem
 }
-
+.font-strong-4{
+    font-weight:600
+}
 .font-strong{
     font-weight:600
 }

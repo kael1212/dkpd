@@ -16,23 +16,23 @@
     <div class="allbody">
       <!-- 搜索框 -->
       <div class="search second-1 ">
-        <div class="display-1 width-10  background-color-1">
+        <div class="search-text display-1 width-10  ">
           <img
-            class="  icon-4"
-            src="/static/images/icon/salesclerk-3.jpg"
+            class="icon-3-4 margin-left-3 "
+            src="/static/images/icon/icon-4.png"
           />
         </div>
-        <div class="display-1 width-20 background-color-2">
-          <div class=" font-size-3">回收站</div>
+        <div class="search-text display-1  width-20 padding-buttom-1 ">
+          <div class=" font-size-3 padding-1 font-strong-4">回收站</div>
         </div>
-        <div class="display-1 width-60 background-color-3">
+        <div class="search-text display-1 width-60  ">
           <input
             class="font-size-2"
             type="text"
             placeholder="店员名称查询"
           />
         </div>
-        <div class="display-1 width-10 background-color-4">
+        <div class="search-text display-1 width-10 ">
           <img
             class="second-1-4 search-icon display-1 icon-1-1"
             src="/static/images/icon/advertising_management/search.png"
@@ -92,7 +92,7 @@ export default {
 </script>
 <style>
 .search div{
-  height: 0.7rem;
+  margin:0 auto
 }
 .title {
   text-align: center;

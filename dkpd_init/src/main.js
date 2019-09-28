@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import './style/box.css'
 import './style/background.css'
@@ -11,6 +13,11 @@ import './style/title.css'
 Vue.config.productionTip = false
 App.mpType = 'app'
 
-const app = new Vue(App)
+Vue.use(ElementUI,);
+const app = new Vue({
+    el: '#app',
+    render: h => h(App)
+  });
 app.$mount()
+
 

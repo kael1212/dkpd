@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/add_staff/main",
     "pages/merchant_list/main", 
     "pages/salesclerkrecycle/main", 
     "pages/advertisingrecycle/main", 
